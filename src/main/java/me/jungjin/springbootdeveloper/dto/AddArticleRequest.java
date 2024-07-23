@@ -3,7 +3,7 @@ package me.jungjin.springbootdeveloper.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import me.jungjin.springbootdeveloper.domain.Article;
+import me.jungjin.springbootdeveloper.entity.Article;
 
 //DTO는 데이터를 옮기기기 위해 사용하는 전달자 역할의 개체, 비즈니스 로직을 포함하지 않음
 @NoArgsConstructor //기본 생성자 추가

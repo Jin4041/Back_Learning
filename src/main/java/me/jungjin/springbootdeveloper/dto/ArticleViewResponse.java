@@ -2,7 +2,7 @@ package me.jungjin.springbootdeveloper.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import me.jungjin.springbootdeveloper.domain.Article;
+import me.jungjin.springbootdeveloper.entity.Article;
 
 import java.time.LocalDateTime;
 

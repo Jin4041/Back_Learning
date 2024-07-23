@@ -1,7 +1,7 @@
 package me.jungjin.springbootdeveloper.dto;
 
 import lombok.Getter;
-import me.jungjin.springbootdeveloper.domain.Article;
+import me.jungjin.springbootdeveloper.entity.Article;
 
 @Getter
 public class ArticleResponse {

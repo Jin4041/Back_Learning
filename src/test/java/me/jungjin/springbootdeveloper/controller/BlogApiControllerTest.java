@@ -1,7 +1,7 @@
 package me.jungjin.springbootdeveloper.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import me.jungjin.springbootdeveloper.domain.Article;
+import me.jungjin.springbootdeveloper.entity.Article;
 import me.jungjin.springbootdeveloper.dto.AddArticleRequest;
 import me.jungjin.springbootdeveloper.dto.UpdateArticleRequest;
 import me.jungjin.springbootdeveloper.repository.BlogRepository;

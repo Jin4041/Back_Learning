@@ -1,0 +1,3 @@
+2024-08-01 15:26:00.751993+09:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ARTICLE" not found (this database is empty); SQL statement:
+select a1_0.id,a1_0.content,a1_0.created_at,a1_0.title,a1_0.updated_at from article a1_0 [42104-224]

@@ -1,7 +1,7 @@
 package me.jungjin.springbootdeveloper.controller;
 
 import lombok.RequiredArgsConstructor;
-import me.jungjin.springbootdeveloper.domain.Article;
+import me.jungjin.springbootdeveloper.entity.Article;
 import me.jungjin.springbootdeveloper.dto.AddArticleRequest;
 import me.jungjin.springbootdeveloper.dto.ArticleResponse;
 import me.jungjin.springbootdeveloper.dto.UpdateArticleRequest;

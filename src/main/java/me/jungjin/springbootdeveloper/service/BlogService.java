@@ -2,11 +2,10 @@ package me.jungjin.springbootdeveloper.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import me.jungjin.springbootdeveloper.domain.Article;
+import me.jungjin.springbootdeveloper.entity.Article;
 import me.jungjin.springbootdeveloper.dto.AddArticleRequest;
 import me.jungjin.springbootdeveloper.dto.UpdateArticleRequest;
 import me.jungjin.springbootdeveloper.repository.BlogRepository;
-import org.hibernate.sql.Update;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

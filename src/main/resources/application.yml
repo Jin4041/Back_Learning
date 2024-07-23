@@ -1,15 +1,30 @@
 spring:
   jpa:
-    # 전송 쿼리 확인
-    show-sql: true
+    #database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    open-in-view: false
+    hibernate:
+      ddl-auto: update  #db 초기화 전략(none, create, create-drop, update)
+
     properties:
       hibernate:
+        #dialect: org.hibernate.dialect.H2Dialect
         format_sql: true
+        # 전송 쿼리 확인
+        show-sql: true
     # 테이블 생성 후에 data.sql 실행
-    defer-datasource-initialization: true
+    #defer-datasource-initialization: true
+
 
   datasource:
-    url: jdbc:h2:mem:testdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/article
+    username: root
+    password: 1234
+    thymeleaf:
+      cache: false
+  #embedded mode로 실행 - 비휘발성
+    #url: jdbc:h2:~/test
 
   h2:
     console:
