@@ -21,12 +21,13 @@ public class BlogApiController {
     //HTTP 메서드가 POST일 때 전달받은 URL과 동일하면 메서드로 매핑
     @PostMapping("/api/articles")
     //@RequestBody로 요청 본문 값 매핑
-    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request){
+    public ResponseEntity<Article> addArticle(@RequestBody AddArticleRequest request){ //RequestBody는 HTTP 요청 시 응답에 해당하는 값을  RequestBody가 붙은 대상 객체에 매핑
         Article savedArticle = blogService.save(request);
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(savedArticle);
     }
 
+    //전체 글을 조회한 뒤 반환하는 메서드
     @GetMapping("/api/articles")
     public ResponseEntity<List<ArticleResponse>> findAllArticles(){
         List<ArticleResponse> articles = blogService.findAll()
@@ -39,7 +40,7 @@ public class BlogApiController {
     }
 
     @GetMapping("/api/articles/{id}")
-    //URL 경로에서 값 추출
+    //URL 경로에서 값 추출 - {id}에 해당하는 값이 id로 들어옴
     public ResponseEntity<ArticleResponse> findArticle(@PathVariable long id){
         Article article = blogService.findById(id);
 

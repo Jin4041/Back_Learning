@@ -24,6 +24,9 @@
       </section>
       <button type="button" id="modify-btn" th:onclick="|location.href='@{/new-article?id={articleId}(articleId=${article.id})}'|" class="btn btn-primary btm-sm">수정</button>
       <button type="button" id="delete-btn" class="btn btn-secondary btn-sm">삭제</button>
+      <a th:href="@{/articles/{id}(id=${article.id - 1})}" class="btn btn-secondary btn-sm">이전 글</a>
+      <a th:href="@{/articles}" class="btn btn-primary btn-sm">목록으로</a>
+      <a th:href="@{/articles/{id}(id=${article.id + 1})}" class="btn btn-secondary btn-sm">다음 글</a>
     </article>
   </div>
 </div>
